@@ -1,0 +1,20 @@
+[manager]
+#sort_by="mtime"
+show_hidden=true
+show_symlink=true
+linemode="size"
+
+[preview]
+tab_size=2
+
+[opener]
+play = [
+    { run = 'vlc $@', orphan = true }
+]
+edit = [
+    { run = 'alacritty -e vim $@', orphan = true }
+]
+open = [
+	{ run = 'xdg-open "$@"', orphan = true, desc = "Open" },
+]
+

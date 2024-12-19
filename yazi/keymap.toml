@@ -1,0 +1,6 @@
+[[manager.prepend_keymap]]
+on = "+"
+desc = "Drag and drop files"
+run = '''
+    shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
+'''

@@ -16,9 +16,25 @@ Derdillas configs for desktop. Checkout `install.sh` for installation.
 - System monitor: btm
 - Audio setup: pavucontrol
 
-### Keybinds
+### Important key-combos
+
+Keybinds make work faster, but if you are anybit like me you will forget those. So here is a list with the most usefull ones and their assoiated App. Let's start with the global ones:
+
 - `❖ Win` + `w`: Launch programm
 - `❖ Win` + `q`: Launch terminal
 - `❖ Win` + `e`: Launch file manager
-- ... default hyprland binds
+- `❖ Win` + `v`: Make window movable
+
+#### yazi
+
+- `Space`: Select current
+- `Ctrl` + `a`: Select all
+- `Ctrl` + `r`: reverse selection
+- `s`, `S`: Search modes
+- `+`: Open selected for drad and drop
+- `Enter`: Open in prefered editor
+- `y`: Copy
+- `x`: Cut
+- `
+
 

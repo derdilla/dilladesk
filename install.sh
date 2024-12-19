@@ -1,6 +1,6 @@
 #!/bin/sh
 
-dotconfigs=("dunst" "havoc" "hypr" "waybar" "alacritty.toml")
+dotconfigs=("dunst" "havoc" "hypr" "waybar" "alacritty.toml", "yazi")
 
 config_dir="$HOME/.config"
 backup_dir="$HOME/confbackup"

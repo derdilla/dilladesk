@@ -22,7 +22,6 @@ bindkey -v
 # Setup aliases and custom tool integrations
 alias ls='eza'
 alias l='eza -al'
-alias grep='rq --color=auto'
 PS1='[\u@\h \W]\$ '
 
 
