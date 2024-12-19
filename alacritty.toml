@@ -1,0 +1,16 @@
+[terminal]
+shell = "/bin/zsh"
+
+[colors]
+primary.background="#000000"
+primary.foreground="#ffffff"
+
+[colors.normal]
+black  = "#000000"
+red    = "#FF3333"
+green  = "#33FF33"
+yellow = "#FFFF33"
+blue   = "#3333FF"
+magenta= "#FF33FF"
+cyan   = "#33FFFF"
+white  = "#FFFFFF"
