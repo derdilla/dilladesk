@@ -12,6 +12,8 @@ NC='\033[0m'
 mkdir -p "$backup_dir"
 
 echo "Installing packages:"
+pacamn -Syu
+pacman -S - < packages.list
 
 echo "Symlinking .configs:"
 for item in "${dotconfigs[@]}"; do
@@ -27,6 +29,7 @@ for item in "${dotconfigs[@]}"; do
 done
 
 echo "+ linking .zshrc"
-ls -s "$(pwd)/on_shell.sh" "$HOME/.zshrc" || (echo -e  "${RED}Failed to install .zshrc$NC" && exit)
+ls -s "$(pwd)/on_shell.sh" "$HOME/" || (echo -e  "${RED}Failed to install .zshrc$NC" && exit)
+mv "$HOME/on_shell.sh" "$HOME/.zshrc"
 
 echo "Installation finished. Old config preserved in: $backup_dir"
