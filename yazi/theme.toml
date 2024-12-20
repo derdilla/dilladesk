@@ -1,2 +1,3 @@
 [flavor]
-use = "monokai-vibrant"
+dark = "monokai-vibrant"
+light = "monokai-vibrant"

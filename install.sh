@@ -1,6 +1,6 @@
 #!/bin/sh
 
-dotconfigs=("dunst" "havoc" "hypr" "waybar" "alacritty.toml", "yazi")
+dotconfigs=("dunst" "havoc" "hypr" "waybar" "alacritty.toml" "yazi")
 
 config_dir="$HOME/.config"
 backup_dir="$HOME/confbackup"
@@ -12,8 +12,8 @@ NC='\033[0m'
 mkdir -p "$backup_dir"
 
 echo "Installing packages:"
-pacamn -Syu
-pacman -S - < packages.list
+pacman -Syu                 || echo "skipping updates, no root"
+pacman -S - < packages.list || echo "skipping packages, no root"
 
 echo "Symlinking .configs:"
 for item in "${dotconfigs[@]}"; do
