@@ -15,6 +15,7 @@ Derdillas configs for desktop. Checkout `install.sh` for installation (Should be
 - non-posix coreutils replacements: ls->[`eza`](https://github.com/eza-community/eza), cat->[`bat`](https://github.com/sharkdp/bat), find->[`rg`](https://github.com/BurntSushi/ripgrep)
 - System monitor: [btm](https://github.com/ClementTsang/bottom)
 - Audio configuration: [pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol/)
+- Text editor: [helix](https://helix-editor.com/)
 
 ### Important key-combos
 
@@ -36,3 +37,24 @@ Keybinds make work faster, but if you are anybit like me you will forget those. 
 - `y`: Copy
 - `x`: Cut
 - `p`: Past
+
+#### helix
+
+Those are a subset of the standard keys.
+
+##### Navigation
+- `h`, `j`, `k`, `l`: left, down, up, right
+- `f<c>`, `F<c>`: find next/previous char
+- `Ctrl` + (`u` / `d`): half a page up /down
+- `Ctrl` + `s`: Save selection to jumplist
+- `Ctrl` + (`i` / `o`): next/last in jump list
+
+#### Normal mode edits
+- `y`: yank selection
+- `p`, `P`: paste before/after selection
+- `R`: Replace with yanked text
+- `u` ,`U`: undo, redo
+- `space`: environment / clipboard interactions
+- `Q`: record macro
+- `q`: replay macro
+

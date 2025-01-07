@@ -26,7 +26,7 @@ PS1='[\u@\h \W]\$ '
 
 
 # https://github.com/sharkdp/bat?tab=readme-ov-file#how-to-use
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
 alias bathelp='bat --plain --language=help'
 help() {
     "$@" --help 2>&1 | bathelp
@@ -35,3 +35,4 @@ help() {
 
 # Shell env vairables
 eval "$(ssh-agent -s)" > /dev/null
+eval "$(mise activate zsh)"

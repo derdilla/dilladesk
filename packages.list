@@ -21,6 +21,7 @@ hyperfine
 hyprland
 hyprpaper
 hyprpolkitagent-bin
+hyprland-qtutils
 iwd
 jj
 jq
@@ -116,7 +117,6 @@ ttf-ubuntu-mono-nerd
 ttf-ubuntu-nerd
 ttf-victor-mono-nerd
 ttf-zed-mono-nerd
-vim
 waybar
 wireless_tools
 wl-clipboard
@@ -127,3 +127,14 @@ xorg-server
 xorg-xinit
 yazi
 zoxide
+helix
+bash-language-server
+yaml-language-server
+jdtls
+vscode-json-language-server
+taplo
+tinymist
+typescript-language-server
+haskell-language-server-static
+typst
+zip

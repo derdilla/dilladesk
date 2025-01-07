@@ -1,0 +1,8 @@
+theme = "doom_acario_dark"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "underline"
