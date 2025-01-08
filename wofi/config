@@ -1,0 +1,10 @@
+show=drun
+hide_scroll=true
+insensitive=true
+location=1
+x=6
+width=25%
+lines=25
+dynamic_lines=true
+filter_rate=10
+style=/home/derdilla/.config/wofi/style.css

@@ -1,0 +1,31 @@
+*, *:focus, *:selected {
+  border: none;
+  outline: none;
+}
+
+#window {
+  border-radius: 10;
+  background: #161320;
+}
+
+#input {
+  background: transparent;
+}
+
+#entry {
+  margin: 2;
+  border-radius: 5;
+}
+
+#entry:focus {
+  border: none;  
+}
+
+#entry:selected {
+  background: transparent;
+}
+
+.entry label:selected {
+  text-decoration: underline;
+  text-decoration-color: rgb(68,192,255); 
+}

@@ -16,6 +16,7 @@ Derdillas configs for desktop. Checkout `install.sh` for installation (Should be
 - System monitor: [btm](https://github.com/ClementTsang/bottom)
 - Audio configuration: [pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol/)
 - Text editor: [helix](https://helix-editor.com/)
+- Application launcher: [wofi](https://hg.sr.ht/~scoopta/wofi)
 
 ### Important key-combos
 
