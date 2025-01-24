@@ -1,2 +1,22 @@
 [language-server.rust-analyzer.config.check]
 command = "clippy"
+
+[language-server.typst-lsp]
+command = "typst-lsp"
+
+[[language]]
+name = "typst"
+scope = "source.typst"
+file-types = ["typst", "typ"]
+indent = { tab-width = 2, unit = "  " }
+comment-token = "//"
+injection-regex = "typ(st)?"
+roots = ["typst.toml"]
+language-servers = [ "typst-lsp" ]
+
+[[language]]
+name = "markdown"
+language-servers = [ "marksman", "ltex-ls" ]
+text-width = 90
+soft-wrap.enable = true
+soft-wrap.wrap-at-text-width = true

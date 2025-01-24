@@ -9,10 +9,10 @@ tab_size=2
 
 [opener]
 play = [
-  { run = 'vlc $@', orphan = true }
+  { run = 'vlc "$@"', orphan = true }
 ]
 edit = [
-  { run = 'alacritty -e helix $@', orphan = true }
+  { run = 'alacritty -e helix "$@"', orphan = true }
 ]
 open = [
   { run = 'xdg-open "$@"', orphan = true, desc = "Open" },
