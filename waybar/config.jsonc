@@ -1,8 +1,8 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher","network","cpu","memory","custom/media","hyprland/workspaces"],
+	"modules-left": ["custom/launcher", "cpu", "memory", "hyprland/workspaces"],
 	"modules-center": [],
-	"modules-right": ["custom/updates","backlight","pulseaudio","clock", "battery",],
+	"modules-right": ["custom/updates","pulseaudio","clock"],
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -13,11 +13,6 @@
 		"format-icons": {
 			"default": ["", "", ""]
 		}
-	},
-	"network": {
-		"tooltip": false,
-		"format-wifi": "  {essid}",
-		"format-ethernet": ""
 	},
 	"backlight": {
 		"tooltip": false,
@@ -45,22 +40,9 @@
         "max-length": 10,
         "on-click": "alacritty -e btm"
     },
-    "custom/media": {
-        "interval": 30,
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 20,
-        "format-icons": {
-            "spotify": " ",
-            "default": " "
-        },
-        "escape": true,
-        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
-        "on-click": "playerctl play-pause"
-    },
     "custom/launcher":{
         "format": " ",
-        "on-click": "wofi --show drun",
+        "on-click": "wofi",
         "on-click-right": "killall wofi"
     },
     "custom/updates":{
@@ -68,7 +50,7 @@
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 60,
-        "on-click": "havoc paru -Syu && notify-send 'The system has been updated' "
+        "on-click": "alacritty -e 'paru -Syu' && notify-send 'The system has been updated' "
     }
 }
 

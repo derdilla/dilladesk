@@ -5,6 +5,11 @@
 #
 
 
+# env
+export PATH=$PATH:/home/derdilla/.local/flutter/bin
+export ANDROID_HOME="/home/derdilla/.android"
+export CHROME_EXECUTABLE="/sbin/chromium"
+
 # Zsh settings (Lines configured by zsh-newuser-install)
 zstyle ':completion:*' completer _expand _complete _ignored _approximate
 zstyle ':completion:*' max-errors 2
@@ -36,3 +41,5 @@ help() {
 # Shell env vairables
 eval "$(ssh-agent -s)" > /dev/null
 eval "$(mise activate zsh)"
+
+eval "$(starship init zsh)"
